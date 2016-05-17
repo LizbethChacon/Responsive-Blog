@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/**{outline: 1px solid rgba(255,0,0,0.2);}*/
+/*# sourceMappingURL=main.css.map */
+body {
+  color: #FFFFFF;
+  background: #413B46; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Courgette", sans-serif;
+  color: #DB862B;
+  font-weight: bold; }
+
+.container {
+  padding-right: 150px;
+  padding-left: 150px; }
+
+.header {
+  background: #000000;
+  color: #FFFFFF; }
+
+.pull-left {
+  height: 70px; }
+
+.pull-right {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif; }
+
+#menu li {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center; }
+
+#nav-mobile {
+  display: none;
+  background: no-repeat center center;
+  float: right;
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: .6; }
+
+#nav-mobile.nav-active {
+  opacity: 1; }
+
+.nav-mobile i {
+  font-size: 40px; }
+
+.pull-right a {
+  color: #FFFFFF; }
+
+.pull-right a:hover {
+  color: #DB862B; }
+
+.content {
+  font-family: "Open Sans", sans-serif; }
+
+.hero {
+  background-image: url(../image/header-image.jpg);
+  background-size: cover;
+  margin-top: 30px;
+  padding: 80px; }
+
+.fondo-negro {
+  background: #1C1B1D;
+  width: 500px;
+  padding: 20px; }
+
+.fondo-negro h1 {
+  font-size: 80px; }
+
+.flowers {
+  margin-top: 30px; }
+
+.flowers .col-md-4 {
+  background: #1C1B1D;
+  padding: 0px;
+  margin-left: 15px;
+  width: 31%; }
+
+.flowers img {
+  width: 100%; }
+
+.news {
+  margin-top: 30px; }
+
+.noticias {
+  background: #1C1B1D; }
+
+.noticias img {
+  width: 100%; }
+
+.noticias p {
+  padding: 10px; }
+
+.video {
+  background: #1C1B1D; }
+
+.video iframe {
+  width: 100%; }
+
+.video p {
+  padding: 10px; }
+
+.busqueda {
+  background: #1C1B1D;
+  padding: 10px; }
+
+.navbar-form .form-control {
+  width: 100%;
+  background: #413B46;
+  border: none; }
+
+.info {
+  background: #1C1B1D; }
+
+.info img {
+  width: 100%; }
+
+.info p {
+  padding: 10px; }
+
+.redes {
+  font-size: 20px;
+  border-radius: 100px; }
+
+.iconos {
+  background: #413B46;
+  display: inline-block;
+  margin: 5px; }
+
+.footer {
+  margin-top: 30px;
+  background: #1C1B1D;
+  padding: 35px; }
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .fondo-negro {
+    width: 350px; }
+
+  .flowers .col-md-4 {
+    width: 96%; } }
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 0px; }
+
+  .fondo-negro {
+    width: 180px; }
+
+  .fondo-negro h1 {
+    font-size: 40px; }
+
+  .flowers .col-md-4 {
+    width: 92%; } }
+@media only screen and (max-width: 640px) {
+  /* mostramos #nav-mobile */
+  #nav-mobile {
+    display: block; }
+
+  /* Fijamos nuestro nav en 100% ancho y dejamos de flotarlo  */
+  #menu {
+    width: 100%;
+    float: none;
+    padding-top: 10px; }
+
+  /* Convertimos nuestra lista de enlaces en un men├║ horizontal */
+  #menu ul {
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    max-height: 0;
+    overflow: hidden; }
+
+  /* estilos para los LI del menu */
+  #menu li {
+    background: #33363b;
+    border-bottom: 1px solid #282b30;
+    float: none; }
+
+  /* Quitamos el borde del ultimo item del men├║ */
+  #menu li:last-child {
+    border-bottom: 0; }
+
+  #menu li a {
+    padding: 15px 0;
+    height: auto;
+    line-height: normal; }
+
+  #menu li a:hover {
+    background: #2a2d33; }
+
+  /* Agregamos una animaci├│n al despligue del men├║ */
+  #menu ul.open-menu {
+    max-height: 400px;
+    -webkit-transition: max-height .4s;
+    -moz-transition: max-height .4s;
+    -ms-transition: max-height .4s;
+    -o-transition: max-height .4s;
+    transition: max-height .4s; } }
+
+/*# sourceMappingURL=main.css.map */

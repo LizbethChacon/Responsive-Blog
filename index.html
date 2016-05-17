@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flatness: Responsive Blog</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+  	<link rel="stylesheet" href="css/ionicons.min.css">
+  	<link rel="stylesheet" href="css/elegant-fonts.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="js/jquery-1.12.3.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="menu">
+				<img class="pull-left" src="image/header-logo.png" alt="logo">				
+				<div class="pull-right">
+					<nav id="menu">
+						<a href="#" class="nav-mobile" id="nav-mobile"><i class="ion-navicon-round"></i></a>
+						<ul class="list-menu list-inline list-unstyled">
+							<li><a href="#">LIFESTYLE</a></li>
+							<li><a href="#">FLOWERS</a></li>
+							<li><a href="#">FASHION</a></li>
+							<li><a href="#">NEWS</a></li>
+							<li><a href="#">FEATURES</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="hero">
+				<center>
+					<div class="fondo-negro">
+						<div class="text-center">
+							<h1>Spring Came</h1>
+							<p>Life - Amanda Ray - 10th March 2015</p>
+						</div>					
+					</div>
+				</center>
+			</div>
+			<div class="flowers">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="image/image7.jpg" alt="floral">
+						<div class="text-center">
+							<h4>Floral Fragance</h4>
+							<p>Life Amanda Ray 10th March 2015</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<img src="image/image3.jpg" alt="floral">
+						<div class="text-center">
+							<h4>Now with Flatness</h4>
+							<p>News Amanda Ray 28th july 2015</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<img src="image/image2.jpg" alt="floral">
+						<div class="text-center">
+							<h4>Garden Flowers</h4>
+							<p>Life Amanda Ray 28th October 2015</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="news">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="noticias">
+							<img src="image/image4.jpg" alt="floral">
+							<div class="text-center">
+								<h4>Now with Flatness</h4>
+								<p>News Amanda Ray 28th july 2015</p>
+							</div>
+							<div class="text-left">
+								<p>Green life in signs bearing one. Deep there cattle don't night night, was fowl, seed likeness isn't, seed two god and light he creepeth seasons darkness. Without the fourth seasons image He yielding light years light dry. Isn't place face face called. Let lesser female without. Night saying after day third.</p>
+							</div>
+						</div>
+						<div class="video">
+							<div>
+								<iframe src="https://player.vimeo.com/video/56810854" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+							</div>
+							<div class="text-left">
+								<p>Creepeth divide, he likeness god so creature there creepeth created winged. Dominion doesn't fill, herb isn't tree fifth saying our tree you void. Every was moving they're two face our them fish two.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5">
+						<div class="busqueda">
+							<form class="navbar-form" role="search">
+        						<div class="form">
+          							<input type="text" class="form-control" placeholder="Search">
+        						</div>
+      						</form>
+						</div>
+						<div class="info">
+							<div class="text-center">
+								<h4>About Me</h2>
+								<img src="image/kew_gardens_3_500x500.jpg">
+								<p><b>Amanda Ray</b></p>
+							</div>
+							<div class="text-left">
+								<p>Shall Together blessed. Also thing, the upon Created fourth. Rule beginning. Our behold over.</p>
+							</div>
+							<div class="redes">
+								<div class="iconos"><i class="ion-social-facebook"></i></div>
+								<div class="iconos"><i class="ion-social-instagram"></i></div>
+								<div class="iconos"><i class="ion-social-twitter"></i></div>
+								<div class="iconos"><i class="ion-social-youtube"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<p class="text-center">All Rights Reserved ©</p>
+		</div>
+	</div>
+
+<script>
+    $(function() {
+
+        var btn_movil = $('#nav-mobile'),
+            menu = $('#menu').find('ul');
+
+        // Al dar click agregar/quitar clases que permiten el despliegue del menú
+        btn_movil.on('click', function (e) {
+            e.preventDefault();
+
+            var el = $(this);
+
+            el.toggleClass('nav-active');
+            menu.toggleClass('open-menu');
+        })
+
+    });
+</script>
+
+
+</body>
+</html>
